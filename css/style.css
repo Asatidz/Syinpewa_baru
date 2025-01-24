@@ -1,91 +1,91 @@
 /* mengatur judul form dengan border bawah dan posisi di tengah */
 .login-box h2 {
-    border-bottom: 1px solid #ccc;
-    color: #555;
-    text-align: center;
-    padding-bottom: 20px;
-    margin: 0 0 20px;
+  border-bottom: 1px solid #ccc;
+  color: #555;
+  text-align: center;
+  padding-bottom: 20px;
+  margin: 0 0 20px;
 }
 
 /* mengatur agar tag input dan select memenuhi container dan tampilan mening */
 input,
 select {
-    width: 100%;
-    padding: 15px 20px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
+  width: 100%;
+  padding: 15px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
 }
 
 /* mengatur tampilan tombol submit */
 input[type="submit"] {
-    background-color: purple;
-    border: none;
-    color: #fff;
-    text-decoration: none;
-    cursor: pointer;
+  background-color: purple;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* ======================= */
 /* style halaman dashboard */
 /* ======================= */
 header {
-    background: purple;
-    color: #fff;
-    padding: 15px 20px;
-    font-size: 20px;
+  background: purple;
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 20px;
 }
 
 /* mengatur lebar menu */
 aside {
-    flex: 20%;
-    background: #222;
+  flex: 20%;
+  background: #222;
 }
 
 /* mengatur lebar konten  */
 section.main {
-    flex: 80%;
-    background: #fff;
-    min-height: 530px;
-    padding: 15px 20px;
+  flex: 80%;
+  background: #fff;
+  min-height: 530px;
+  padding: 15px 20px;
 }
 
 /* mengatur footer dn teks ditengah */
 footer {
-    background: #ccc;
-    color: #555;
-    padding: 20px;
-    text-align: center;
+  background: #ccc;
+  color: #555;
+  padding: 20px;
+  text-align: center;
 }
 
 /* mengatur layout(responsive) */
 @media (max-width: 700px) {
-    .container {
-        flex-direction: column;
-    }
+  .container {
+    flex-direction: column;
+  }
 }
 
 /* navigas dan membuang pading */
 .menu {
-    padding: 0;
+  padding: 0;
 }
 
 /* menambah border bawah */
 .menu li {
-    border-bottom: 1px solid dotted #444;
-    list-style: none;
+  border-bottom: 1px solid dotted #444;
+  list-style: none;
 }
 
 /* mengatur desain mneu yang dibuat dengan tag a */
 .menu a {
-    display: block;
-    padding: 20px 20px;
-    color: #fff;
-    text-decoration: none;
+  display: block;
+  padding: 20px 20px;
+  color: #fff;
+  text-decoration: none;
 }
 
 /* mengammbil background menu ketika ditunjuk mouse */
 .menu a:hover {
-    background: #000;
+  background: #000;
 }
 
 /* ======================= */
@@ -93,54 +93,54 @@ footer {
 /* ======================= */
 /* mengatur desain judul halaman dengan border  */
 .judul {
-    color: #555;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 15px;
+  color: #555;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
 }
 
 /* mengatur lebar tabel penuh dan antaer boordor tdk memmiliki jarak */
 .table {
-    width: 100%;
-    margin-top: 20px;
-    border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
 }
 
 /* menambahkan border dan pading pada sel tambahan */
 .table th,
 .table td {
-    border: 1px solid #ccc;
-    padding: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
 }
 
 /* background judul table */
 .table th {
-    background: #eee;
+  background: #eee;
 }
 
 /* mengatur desain tombol tag <a> */
 .tombol {
-    display: inline-block;
-    max-width: 150px;
-    padding: 15px 30px;
-    color: #fff;
-    text-decoration: none;
-    background: purple;
-    cursor: pointer;
+  display: inline-block;
+  max-width: 150px;
+  padding: 15px 30px;
+  color: #fff;
+  text-decoration: none;
+  background: purple;
+  cursor: pointer;
 }
 
 /* desian tombol eit ddan haus */
 .tombol.edit,
 .tombol.hapus {
-    padding: 10px 15px;
-    font-size: 12px;
+  padding: 10px 15px;
+  font-size: 12px;
 }
 
 .tombol.hapus {
-    background: #fc4c4c;
+  background: #fc4c4c;
 }
 
 .table tr {
-    text-align: center;
+  text-align: center;
 }
 
 /* ======================= */
@@ -188,144 +188,288 @@ input[type="radio"] {
 }
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* mengatur font dan background halaman */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    background: purple;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: purple;
 }
 
 /* membuat container menjadi flex box dan kotak login di tengah */
-  .page-container {
-      font-family: 'Roboto', sans-serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      background-color: #f0f0f0;
-  }
+.page-container {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
 
-  .page-container header {
-      background-color: #333;
-      color: white;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-  }
+.page-container header {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .page-container header h1 {
-      margin: 0;
-      font-size: 1.5em;
-  }
+.page-container header h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
 
-  .page-container header nav a {
-      color: white;
-      margin-left: 20px;
-      text-decoration: none;
-  }
+.page-container header nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
 
-  .page-container .container {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #e0e0e0;
-      padding: 20px;
-      background: url('dark-plates-with-beans-pasta-dark-background') no-repeat center center fixed;
-      background-size: cover;
-      background-position: center;
-      position: relative;
-  }
+.page-container .container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e0e0;
+  padding: 20px;
+  background: url("dark-plates-with-beans-pasta-dark-background.jpg") no-repeat
+    center center fixed;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
 
+.page-container .content {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.page-container .content .text {
+  max-width: 400px;
+}
+
+.page-container .content .text h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.page-container .content .text p {
+  margin: 10px 0;
+}
+
+.page-container .signup {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.page-container .signup h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+.page-container .signup input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.page-container .signup button {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.page-container footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.page-container footer span {
+  margin: 0 5px;
+}
+
+@media (max-width: 768px) {
   .page-container .content {
-      display: flex;
-      align-items: center;
-      padding: 20px;
-      border-radius: 10px;
-      color: white;
-      text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-      position: absolute;
-      left: 20px;
-      top: 50%;
-      transform: translateY(-50%);
-  }
-
-  .page-container .content .text {
-      max-width: 400px;
-  }
-
-  .page-container .content .text h2 {
-      margin-top: 0;
-      font-size: 1.5em;
-  }
-
-  .page-container .content .text p {
-      margin: 10px 0;
+    flex-direction: column;
+    align-items: flex-start;
+    position: static;
+    margin-bottom: 20px;
+    transform: none;
   }
 
   .page-container .signup {
-      background-color: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      max-width: 300px;
-      position: absolute;
-      bottom: 20px;
-      right: 20px;
+    position: static;
+    margin-left: 0;
+    margin-top: 20px;
   }
+}
 
-  .page-container .signup h3 {
-      margin-top: 0;
-      font-size: 1.2em;
+.reporting-system {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+.reporting-system .container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.reporting-system .header {
+  background-color: #b0b0b0;
+  padding: 10px 20px;
+  text-align: left; /* Align text to the left */
+  font-size: 20px; /* Increase font size */
+  color: #fff;
+}
+.reporting-system .main {
+  display: flex;
+  flex-grow: 1;
+}
+.reporting-system .sidebar {
+  width: 250px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.reporting-system .sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.reporting-system .sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.reporting-system .sidebar ul li {
+  margin-bottom: 15px;
+}
+.reporting-system .sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.reporting-system .sidebar ul li a i {
+  margin-right: 10px;
+}
+.reporting-system .sidebar ul li ul {
+  list-style: none;
+  padding-left: 20px;
+}
+.reporting-system .content {
+  flex-grow: 1;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+.reporting-system .content h1 {
+  font-size: 24px;
+  margin-bottom: 20px; /* Adjusted margin bottom */
+}
+.reporting-system .add-data-btn {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  top: 60px; /* Adjusted position */
+  right: 20px;
+}
+.reporting-system .table-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 60px; /* Added margin top */
+}
+.reporting-system table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #fff;
+}
+.reporting-system table th,
+.reporting-system table td {
+  padding: 10px;
+  text-align: left;
+}
+.reporting-system table th {
+  background-color: #444;
+}
+.reporting-system table tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.reporting-system table td {
+  padding-bottom: 20px; /* Added margin bottom */
+}
+.reporting-system table a {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit color from parent */
+}
+.reporting-system .footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+}
+.reporting-system .footer i {
+  color: red;
+}
+.reporting-system .footer span {
+  color: gold;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .reporting-system .main {
+    flex-direction: column;
   }
-
-  .page-container .signup input {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
+  .reporting-system .sidebar {
+    width: 100%;
+    padding: 10px;
   }
-
-  .page-container .signup button {
-      width: 100%;
-      padding: 10px;
-      background-color: #333;
-      color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
+  .reporting-system .content {
+    padding: 10px;
   }
-
-  .page-container footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 10px 0;
+  .reporting-system .add-data-btn {
+    top: 20px;
+    right: 10px;
   }
-
-
-  .page-container footer span {
-      margin: 0 5px;
+  .reporting-system .table-container {
+    margin-top: 40px;
+    padding: 10px;
   }
-
-  @media (max-width: 768px) {
-      .page-container .content {
-          flex-direction: column;
-          align-items: flex-start;
-          position: static;
-          margin-bottom: 20px;
-          transform: none;
-      }
-
-      .page-container .signup {
-          position: static;
-          margin-left: 0;
-          margin-top: 20px;
-      }
+  .reporting-system table th,
+  .reporting-system table td {
+    padding: 5px;
   }
+}
