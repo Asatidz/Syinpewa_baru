@@ -1,164 +1,10 @@
-
-* {
-  box-sizing: border-box;
-}
-
-/* mengatur font dan background halaman */
-
-/* membuat container menjadi flex box dan kotak login di tengah */
-.page-container {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background-color: #f0f0f0;
-}
-
-.page-container header {
-  background-color: #333;
-  color: white;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.page-container header h1 {
-  margin: 0;
-  font-size: 1.5em;
-}
-
-.page-container header nav a {
-  color: white;
-  margin-left: 20px;
-  text-decoration: none;
-}
-
-
-  .page-container .container {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #e0e0e0;
-      padding: 20px;
-      background: url('dark-plates-with-beans-pasta-dark-background.jpg') no-repeat center center fixed;
-      background-size: cover;
-      background-position: center;
-      position: relative;
-  }
-
-
-
-.page-container .content {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  border-radius: 10px;
-  color: white;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-  position: absolute;
-  left: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.page-container .content .text {
-  max-width: 400px;
-}
-
-.page-container .content .text h2 {
-  margin-top: 0;
-  font-size: 1.5em;
-}
-
-.page-container .content .text p {
-  margin: 10px 0;
-}
-
-.page-container .signup {
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  max-width: 300px;
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-}
-
-.page-container .signup h3 {
-  margin-top: 0;
-  font-size: 1.2em;
-}
-
-.page-container .signup input {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.page-container .signup button {
-  width: 100%;
-  padding: 10px;
-  background-color: #333;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.page-container footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-}
-
-.page-container footer span {
-  margin: 0 5px;
-}
-
-@media (max-width: 768px) {
-  .page-container .content {
-    flex-direction: column;
-    align-items: flex-start;
-    position: static;
-    margin-bottom: 20px;
-    transform: none;
-  }
-
-  .page-container .signup {
-    position: static;
-    margin-left: 0;
-    margin-top: 20px;
-  }
-}
-
-/* dashbaord */
- body {
-   margin: 0;
-   font-family: 'Roboto', sans-serif;
-   background-color: #f0f0f0;
- }
-
- .container {
-   display: flex;
-   height: 100vh;
- }
-
-                /* Dashboard */
+/* Dashboard */
 
 /* DAshboard */
 body.dashboard-body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #e0e0e0;
-    
 }
 
 .dashboard-container {
@@ -190,7 +36,6 @@ body.dashboard-body {
 .dashboard-main {
     display: flex;
     flex: 1;
-    
 }
 
 .dashboard-sidebar {
@@ -248,7 +93,6 @@ body.dashboard-body {
     box-sizing: border-box;
     background-color: #f0f0f0;
     position: relative;
-    background: url('dark-plates-with-beans-pasta-dark-background.jpg') no-repeat center center fixed;
 }
 
 .dashboard-content h1 {
@@ -350,4 +194,3 @@ td {
         width: 100%;
     }
 }
-

@@ -3,84 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <div class="container">
-        <div class="header">
-            <h2>System Informasi Pelaporan Pelanggaran</h2>
-            <ul>
-                <li><a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-                <li>
-                    <a href="#" onclick="toggleSubmenu(event)"><i class="fas fa-database"></i> Data Kategori</a>
-                    <ul>
-                        <li><a href="#">List Pelanggaran</a></li>
-                        <li><a href="#">Data Pelanggaran</a></li>
-                    </ul>
-                </li>
-                <li><a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
-            </ul>
-        </div>
-        <div class="main-content">
-            <h1>Dashboard</h1>
-            <div class="stats">
-                <div class="stat-box">
-                    <h2>Jumlah siswa</h2>
-                    <p>5</p>
-                </div>
-                <div class="stat-box">
-                    <h2>Jumlah pelanggan</h2>
-                    <p>5</p>
-                </div>
-            </div>
-            <div class="tables">
-                <div class="table-container">
-                    <h3><i class="fas fa-clipboard-list"></i> Top Pelanggran</h3>
-                    <table>
-                        <tr>
-                            <th>No.</th>
-                            <th>Nama Pelanggaran</th>
-                            <th>Total Pelanggaran</th>
-                        </tr>
-                        <tr>
-                            <td>1.</td>
-                            <td>Seragam Tidak Rapi</td>
-                            <td>10</td>
-                        </tr>
-                    </table>
-                </div>
-                <div class="table-container">
-                    <h3><i class="fas fa-clipboard-list"></i> Top Siswa</h3>
-                    <table>
-                        <tr>
-                            <th>No.</th>
-                            <th>Nama Siswa</th>
-                            <th>Jumlah</th>
-                        </tr>
-                        <tr>
-                            <td>1.</td>
-                            <td>Anindya Zifara</td>
-                            <td>10</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-            <div class="footer">
-                By Made <i class="fas fa-heart"></i> by TechnoMancers <i class="fas fa-smile"></i> 2025
-            </div>
-        </div>
-    </div>
     <script>
-        function toggleSubmenu(event) {
-            event.preventDefault();
-            const submenu = event.target.nextElementSibling;
-            if (submenu.style.display === "none" || submenu.style.display === "") {
-                submenu.style.display = "block";
+        function toggleSubmenu() {
+            var submenu = document.getElementById('submenu');
+            if (submenu.style.display === 'none' || submenu.style.display === '') {
+                submenu.style.display = 'block';
             } else {
-                submenu.style.display = "none";
+                submenu.style.display = 'none';
             }
         }
     </script>
+</head>
+<body class="dashboard-body">
+    <div class="dashboard-container">
+        <div class="dashboard-header">
+            <h1>System Informasi Pelaporan Pelanggaran</h1>
+        </div>
+        <div class="dashboard-main">
+            <div class="dashboard-sidebar">
+                <h2>Main Navigation</h2>
+                <ul>
+                    <li><a href="dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li>
+                        <a onclick="toggleSubmenu()"><i class="fas fa-database"></i> Data Kategori</a>
+                        <ul id="submenu" class="submenu">
+                            <li><a href="list_pelanggaran.html">List Pelanggaran</a></li>
+                            <li><a href="data_pelanggaran.html">Data Pelanggaran</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="index.html"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </div>
+            <div class="dashboard-content">
+                <h1>Dashboard</h1>
+                <div class="dashboard-stats">
+                    <div class="dashboard-stat-box">
+                        <h2>Jumlah siswa</h2>
+                        <p>5</p>
+                    </div>
+                    <div class="dashboard-stat-box">
+                        <h2>Jumlah pelanggran</h2>
+                        <p>5</p>
+                    </div>
+                </div>
+                <div class="dashboard-tables">
+                    <div class="dashboard-table-box">
+                        <h3><i class="fas fa-exclamation-triangle"></i> Top Pelanggran</h3>
+                        <table>
+                            <tr>
+                                <th>No.</th>
+                                <th>Nama Pelanggaran</th>
+                                <th>Total Pelanggaran</th>
+                            </tr>
+                            <tr>
+                                <td>1.</td>
+                                <td>Seragam Tidak Rapi</td>
+                                <td>10</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="dashboard-table-box">
+                        <h3><i class="fas fa-user"></i> Top Siswa</h3>
+                        <table>
+                            <tr>
+                                <th>No.</th>
+                                <th>Nama Siswa</th>
+                                <th>Jumlah</th>
+                            </tr>
+                            <tr>
+                                <td>1.</td>
+                                <td>Anindya Zifara</td>
+                                <td>5</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dashboard-footer">
+            By Made ❤️ by TechnoMancers| 😊 2025
+        </div>
+    </div>
 </body>
 </html>
